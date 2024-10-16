@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .default {
+    @apply text-[14px] bg-neutral-200/50
+  }
+
+  .btn-page {
+    @apply px-3.5 py-2 min-w-11 text-[14px] border bg-purple-500 text-white rounded-lg
+  }
+
+  .btn-page:hover {
+    @apply bg-purple-600
+  }
+
+  .btn-page.active {
+    @apply bg-purple-700
+  }
+
+  .btn-page:active {
+    @apply transition-all duration-75 scale-[0.98] shadow-none
+  }
+
+  .btn-page:disabled {
+    @apply px-3.5 py-1.5 border bg-purple-300 text-gray-200
+  }
+
+  .page-nav {
+    @apply flex gap-1 mx-12 mt-16 mb-8
+  }
+
+  .page-nav a {
+    @apply bg-purple-500 text-white rounded-lg px-3 py-1.5 shadow-md
+  }
+
+  .page-nav a:hover {
+    @apply bg-purple-600
+  }
+
+  .table-statistics {
+    @apply px-3.5 py-2 text-slate-800 text-sm font-semibold
+  }
+
+  .btn-delete {
+    @apply px-2 py-1.5 text-white bg-red-500 hover:bg-red-600 rounded-lg drop-shadow-md
+  }
+
+  .btn-delete:active {
+    @apply transition-all duration-75 scale-[0.98] shadow-none
+  }
+}
