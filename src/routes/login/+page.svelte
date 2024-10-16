@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex justify-center items-center mt-64">
-  <form class="flex-col" method="POST" action="http://localhost:8090/api/v1/admin/login">
+  <form class="flex-col" method="POST" action="/api/v1/admin/login">
     <div class="login-form-input-container">
       <span class="login-form-label">아이디</span>
       <input name="username" bind:value={data.username} class="login-input-field" type="text" required

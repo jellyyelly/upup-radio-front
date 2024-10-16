@@ -6,7 +6,7 @@ const send = async ({
   data = {},
   access_token = "",
 } = {}) => {
-  const commonUrl = "http://localhost:8090";
+  const commonUrl = "https://admin.upup-radio.site";
   const url = commonUrl + path;
 
   const headers = {

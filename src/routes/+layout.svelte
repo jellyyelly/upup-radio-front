@@ -19,7 +19,7 @@
   <Header />
   {#if isLoggedIn}
     <div class="btn-box">
-      <form method="POST" action="http://localhost:8090/api/v1/admin/logout">
+      <form method="POST" action="/api/v1/admin/logout">
         <button class="btn-logout" type="submit">
           로그아웃
         </button>
