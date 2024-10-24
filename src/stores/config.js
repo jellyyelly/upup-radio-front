@@ -16,8 +16,6 @@ function setConfig() {
 
       const getData = await getApi(options);
 
-      console.log('data: ', getData)
-
       update(data => {
         data.policies = getData.data
 
@@ -45,7 +43,6 @@ function setConfig() {
 
       fetchPolicies();
       window.alert(`변경에 성공했습니다.\n\n변경한 값: ${getData.data.changeResult}\n변경 시각:${getData.data.changeDateTime}`)
-      console.log('put result: ', getData)
     }
     catch(error) {
       throw error;

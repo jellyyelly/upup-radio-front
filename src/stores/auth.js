@@ -47,7 +47,7 @@ function setAuth() {
     };
 
     const authResponse = await postApi(options);
-    console.log('login res: ', authResponse);
+    // console.log('login res: ', authResponse);
     // handleAuthResponse(authResponse);
     router.goto('/');
   };
@@ -60,7 +60,6 @@ function setAuth() {
 
       const response = await getApi(options)
       if (typeof response === 'undefined') {
-        console.log('uuuuu')
         return false
       }
       const check = response.data
@@ -71,7 +70,6 @@ function setAuth() {
         })
         return true
       }
-      console.log('noo')
       return false
     }
     catch(error) {
@@ -79,7 +77,6 @@ function setAuth() {
         data.isLoggedIn = false
         return data
       })
-      console.log('errrrr', error)
       return false
     }
   }
