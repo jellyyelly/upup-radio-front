@@ -9,7 +9,6 @@ const send = async ({
   data = {},
   access_token = "",
 } = {}) => {
-  console.log('zz', host)
   const url =  host + path;
 
   const headers = {
