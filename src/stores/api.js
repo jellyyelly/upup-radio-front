@@ -1,13 +1,16 @@
 import axios from "axios";
 
+export const host = "https://admin.upup-radio.site";
+// export const host = "http://localhost:8090";
+
 const send = async ({
   method = "",
   path = "",
   data = {},
   access_token = "",
 } = {}) => {
-  const commonUrl = "https://admin.upup-radio.site";
-  const url = commonUrl + path;
+  console.log('zz', host)
+  const url =  host + path;
 
   const headers = {
     "content-type": "application/json;charset=UTF-8",

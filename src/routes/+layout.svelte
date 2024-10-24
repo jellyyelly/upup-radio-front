@@ -2,6 +2,7 @@
   import "../app.css";
   import { onMount } from "svelte";
   import { auth } from '../stores/auth.js'
+  import { host } from '../stores/api.js';
   import Header from '../components/Header.svelte';
 
   let isLoggedIn = false;
@@ -10,7 +11,6 @@
   }
 
   onMount(async () => {
-    console.log('im layout')
     await auth.checkLoginStatus()
   });
 </script>
@@ -19,7 +19,7 @@
   <Header />
   {#if isLoggedIn}
     <div class="btn-box">
-      <form method="POST" action="/api/v1/admin/logout">
+      <form method="POST" action={host + "/api/v1/admin/logout"}>
         <button class="btn-logout" type="submit">
           로그아웃
         </button>
