@@ -34,6 +34,12 @@
   <div class="content-md">
     {user.createdAt === undefined ? '???' : user.createdAt}
   </div>
+  <div class="content-sm">
+    {user.dormant === undefined ? '???' : user.dormant}
+  </div>
+  <div class="content-md">
+    {user.dormantAt === undefined ? '???' : user.dormantAt}
+  </div>
   <div class="flex gap-3 justify-center items-center content-sm text-nowrap">
     {remaining === null ? '? 개' : `${remaining}개`}
     <button class="btn-retrieve" on:click={() => retrieveRemaining(user.userId)}>

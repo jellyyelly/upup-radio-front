@@ -18,6 +18,12 @@
     가입일
   </div>
   <div class="content-sm">
+    휴면 여부
+  </div>
+  <div class="content-md">
+    휴면일
+  </div>
+  <div class="content-sm">
     남은 토큰 개수
   </div>
   <div class="content-sm">
